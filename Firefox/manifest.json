@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Text Saver Firefox",
+  "version": "1.0",
+  "description": "Передаёт выделенный текст в буфер по Alt+Z",
+
+  "permissions": [
+    "activeTab",
+    "clipboardWrite"
+  ],
+
+  "commands": {
+    "save-selected-text": {
+      "suggested_key": {
+        "default": "Alt+Z"
+      },
+      "description": "Сохранить выделенный текст"
+    }
+  },
+
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  }
+}
