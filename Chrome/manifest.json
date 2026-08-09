@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Text Saver",
+  "version": "1.0",
+  "description": "Сохраняет выделенный текст по Alt+Z",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "clipboardWrite"
+  ],
+  "commands": {
+    "save-selected-text": {
+      "suggested_key": {
+        "default": "Alt+Z"
+      },
+      "description": "Сохранить выделенный текст"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
